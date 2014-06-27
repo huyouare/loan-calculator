@@ -1,0 +1,27 @@
+.slider-selection {
+  background: #BABABA;
+}
+
+.slider.slider-horizontal .slider-handle {
+  background-color: #00b1ac;
+  background-image: linear-gradient(to bottom, #00b1ac, #00b1ac);
+}
+.origination-fee .slider.slider-horizontal .slider-handle {
+  opacity: 1;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.chart-row {
+  margin: 20px 0;
+}
+
+.jumbotron {
+  width: 800px;
+}

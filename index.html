@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Loan calculator</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Git yer lone rate</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <div class="row sliders">
+          <div class="col-md-6 loan-amount"><h4>Loan Amount</h4> <b>$1,000</b> <input id="loan-amount" data-slider-id='loan-amount-slider' type="text" data-slider-min="1000" data-slider-max="50000" data-slider-step="100" data-slider-value="10000"/> <b>$50,000</b> </div>
+          <div class="col-md-6 loan-length"><h4>Loan Length</h4> <b>1 Year</b> <input id="loan-length" data-slider-id='loan-length-slider' type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5"/> <b>10 Years</b> </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 interest-rate"><h4>Interest Rate</h4> <b><span id="interest-rate-slider-val">10%</span></b> <input id="interest-rate" data-slider-id='interest-rate-slider' type="text" data-slider-min="0" data-slider-max="35" data-slider-step="1" data-slider-value="10" data-slider-tooltip="hide"/> </div>
+          <div class="col-md-6 origination-fee"><h4>Origination Fee</h4> <input id="origination-fee" data-slider-id='origination-fee-slider' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-tooltip="hide" data-slider-handle="custom"/> </div>
+        </div>
+        <div class="row chart-row">
+          <div class="col-md-12"><canvas id="myChart" width="400" height="400"></canvas></div>
+        </div>
+        <div class="row">
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© Company 2014</p>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
